@@ -13,8 +13,8 @@ import html as html_module
 from datetime import datetime
 from typing import List, Optional
 import httpx
-from backend.scrapers.base import BaseScraper
-from backend.models import RentalPrice
+from scrapers.base import BaseScraper
+from models import RentalPrice
 
 logger = logging.getLogger(__name__)
 

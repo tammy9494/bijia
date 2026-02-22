@@ -3,7 +3,7 @@ FastAPI 主应用入口
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.routers import rental
+from routers import rental
 
 app = FastAPI(title="汽车租赁比价 API", version="1.0.0")
 

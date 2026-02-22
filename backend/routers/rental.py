@@ -6,10 +6,10 @@ import logging
 from datetime import datetime
 from urllib.parse import urlencode, quote
 from fastapi import APIRouter, HTTPException
-from backend.models import RentalRequest, RentalResponse, RentalPrice, PlatformLink
-from backend.nev_catalog import search_cars, get_all_brands, match_platform_car
-from backend.scrapers.yihai import YihaiScraper, _estimate_daily_price
-from backend.cache import cache
+from models import RentalRequest, RentalResponse, RentalPrice, PlatformLink
+from nev_catalog import search_cars, get_all_brands, match_platform_car
+from scrapers.yihai import YihaiScraper, _estimate_daily_price
+from cache import cache
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

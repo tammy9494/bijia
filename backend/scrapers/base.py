@@ -3,7 +3,7 @@
 """
 from abc import ABC, abstractmethod
 from typing import List
-from backend.models import RentalPrice
+from models import RentalPrice
 
 
 class BaseScraper(ABC):
